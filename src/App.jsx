@@ -3,9 +3,10 @@ import React from 'react'
 export default function App() {
   return (
     <div className='container'>
-      <p>Generated Password</p>
+      
       <h1>Password Genie</h1>
-      <div className="password-generator">
+      <div className='password-generator'>
+        <p className='generated-password'>Generated Password</p>
         <form>
           <article>
             <label htmlFor='password-length'>Password Length</label>
