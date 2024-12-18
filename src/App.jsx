@@ -8,6 +8,13 @@ export default function App() {
         <form>
           <article>
             <label htmlFor='password-length'>Password Length</label>
+            <input 
+              type='number' 
+              name='password-length' 
+              id='password-length' 
+              min={8} 
+              max={20}
+            />
           </article>
         </form>
       </div>
