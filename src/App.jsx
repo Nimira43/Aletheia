@@ -48,6 +48,7 @@ export default function App() {
               id='symbols' 
             />
           </article>
+          <button type='Submit'>Generate Password</button>
         </form>
       </div>
     </div>
