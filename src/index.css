@@ -15,7 +15,6 @@
   --grey-md: #888;
   --grey-lg: #ccc;
   --grey-xl: #eee;
-  --blue: #0685b7;
 }
 
 body { 
@@ -24,4 +23,17 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+.container {
+  background-color: #ccc;
+  width: 500px;
+  padding: 24px;
+  border-radius: 5px;
+  border: 1px dotted var(--grey-md);
+}
+
+.container h1 {
+  text-align: center;
+  color: var(--dark);
 }
