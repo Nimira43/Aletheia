@@ -31,6 +31,7 @@ body {
   padding: 24px;
   border-radius: 5px;
   border: 1px dotted var(--grey-md);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .container h1 {
@@ -43,7 +44,7 @@ body {
   background-color: var(--grey-dk);
   color: var(--light);
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 5px;
   margin-bottom: 1rem;
 }
 
