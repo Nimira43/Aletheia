@@ -25,6 +25,14 @@ export default function App() {
             />
           </article>
           <article>
+            <label htmlFor='uppercase-letters'>Uppercase Letters</label>
+            <input 
+              type='checkbox' 
+              name='uppercase-letters' 
+              id='uppercase-letters' 
+            />
+          </article>
+          <article>
             <label htmlFor='numbers'>Numbers</label>
             <input 
               type='checkbox' 
