@@ -59,3 +59,25 @@ body {
 input {
   cursor: pointer;
 }
+
+.container form button {
+  font-family: inherit;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: var(--grey-dk);
+  color: var(--light);
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.container form button:hover {
+  background-color: var(--dark);
+}
+
+.container form button:active {
+  transform: scale(0.98);
+}
