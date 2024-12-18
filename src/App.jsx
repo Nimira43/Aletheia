@@ -16,6 +16,14 @@ export default function App() {
               max={20}
             />
           </article>
+          <article>
+            <label htmlFor='lowercase-letters'>Lowercase Letters</label>
+            <input 
+              type='checkbox' 
+              name='lowercase-letters' 
+              id='lowercase-letters' 
+            />
+          </article>
         </form>
       </div>
     </div>
