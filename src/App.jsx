@@ -40,6 +40,14 @@ export default function App() {
               id='numbers' 
             />
           </article>
+          <article>
+            <label htmlFor='symbols'>Symbols</label>
+            <input 
+              type='checkbox' 
+              name='symbols' 
+              id='symbols' 
+            />
+          </article>
         </form>
       </div>
     </div>
