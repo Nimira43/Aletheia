@@ -17,3 +17,11 @@
   --grey-xl: #eee;
   --blue: #0685b7;
 }
+
+body { 
+  background-color: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
