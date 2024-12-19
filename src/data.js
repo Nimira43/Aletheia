@@ -1,4 +1,4 @@
-export const numbers = '0123456789'
+export const nums = '0123456789'
 export const lowercase = 'abcdefghijklmnopqrstuvwxyz'
 export const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-export const symbols = '~!@#$%^&*()_+}{|::?><}'
+export const syms = '~!@#$%^&*()_+}{|::?><}'
