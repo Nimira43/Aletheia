@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 export default function App() {
   const [passwordLength, setPasswordLength] = useState(8)
   const [lowercaseLetters, setLowercaseLetters] = useState(false)
-  const [UppercaseLetters, setUppercaseLetters] = useState(false)
+  const [uppercaseLetters, setUppercaseLetters] = useState(false)
   const [numbers, setNumbers] = useState(false)
   const [symbols, setSymbols] = useState(false)
 
@@ -33,7 +33,7 @@ export default function App() {
                 name='lowercase-letters' 
                 id='lowercase-letters' 
                 checked={lowercaseLetters}
-                onChange={(e).setLowercaseLetters(e.target.checked)}
+                onChange={(e) => setLowercaseLetters(e.target.checked)}
               />
             </article>
             <article>
@@ -43,7 +43,7 @@ export default function App() {
                 name='uppercase-letters' 
                 id='uppercase-letters' 
                 checked={uppercaseLetters}
-                onChange={(e).setUppercaseLetters(e.target.checked)}
+                onChange={(e) => setUppercaseLetters(e.target.checked)}
               />
             </article>
             <article>
@@ -52,6 +52,8 @@ export default function App() {
                 type='checkbox' 
                 name='numbers' 
                 id='numbers' 
+                checked={numbers}
+                onChange={(e) => setNumbers(e.target.checked)}
               />
             </article>
             <article>
@@ -60,6 +62,8 @@ export default function App() {
                 type='checkbox' 
                 name='symbols' 
                 id='symbols' 
+                checked={symbols}
+                onChange={(e) => setSymbols(e.target.checked)}
               />
             </article>
             <button type='Submit'>Generate Password</button>
