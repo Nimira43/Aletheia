@@ -2,6 +2,10 @@ import React, {useState} from 'react'
 
 export default function App() {
   const [passwordLength, setPasswordLength] = useState(8)
+  const {LowercaseLetters, setLowercaseLetters] = useState(false)
+  const [passwordLength, setPasswordLength] = useState(8)
+  const [passwordLength, setPasswordLength] = useState(8)
+  const [passwordLength, setPasswordLength] = useState(8)
 
   return (
     <div className='container'>
