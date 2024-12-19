@@ -8,6 +8,10 @@ export default function App() {
   const [numbers, setNumbers] = useState(false)
   const [symbols, setSymbols] = useState(false)
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
+
   return (
     <>
       <div className='container'>
