@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 export default function App() {
   const [passwordLength, setPasswordLength] = useState(8)
-  const [LowercaseLetters, setLowercaseLetters] = useState(false)
+  const [lowercaseLetters, setLowercaseLetters] = useState(false)
   const [UppercaseLetters, setUppercaseLetters] = useState(false)
   const [numbers, setNumbers] = useState(false)
   const [symbols, setSymbols] = useState(false)
@@ -32,6 +32,8 @@ export default function App() {
                 type='checkbox' 
                 name='lowercase-letters' 
                 id='lowercase-letters' 
+                checked={lowercaseLetters}
+                onChange={(e).setLowercaseLetters(e.target.checked)}
               />
             </article>
             <article>
