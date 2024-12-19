@@ -22,6 +22,7 @@ export default function App() {
                 id='password-length' 
                 min={8} 
                 max={20}
+                defaultValue={passwordLength}
               />
             </article>
             <article>
