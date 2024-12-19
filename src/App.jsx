@@ -14,7 +14,7 @@ export default function App() {
           <h1>Password Genie</h1>
         <div className='password-generator'>
           <p className='generated-password'>Generated Password</p>
-          <form>
+          <form onSubmit={handleSubmit}>
             <article>
               <label htmlFor='password-length'>Password Length</label>
               <input 
