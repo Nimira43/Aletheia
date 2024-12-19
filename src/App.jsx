@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { numbers, lowercase, uppercase, symbols } from './data'
 
 export default function App() {
   const [passwordLength, setPasswordLength] = useState(8)
