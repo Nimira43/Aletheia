@@ -42,6 +42,8 @@ export default function App() {
                 type='checkbox' 
                 name='uppercase-letters' 
                 id='uppercase-letters' 
+                checked={uppercaseLetters}
+                onChange={(e).setUppercaseLetters(e.target.checked)}
               />
             </article>
             <article>
