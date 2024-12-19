@@ -23,6 +23,7 @@ export default function App() {
                 min={8} 
                 max={20}
                 defaultValue={passwordLength}
+                onChange={(e) => setPasswordLength(e.target.value)}
               />
             </article>
             <article>
