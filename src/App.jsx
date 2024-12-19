@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 
 export default function App() {
+  const [passwordLength, setPasswordLength] = useState(8)
 
-  
   return (
     <div className='container'>
       
