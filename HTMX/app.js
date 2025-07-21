@@ -23,6 +23,7 @@ app.get('/', (req, res) => {
         </header>
         <main>
           <p>HTMX lets HTML handle AJAX, WebSockets, and more — no JavaScript frameworks, just markup magic.</p>
+          <input type="text" />
           <button>Discover More</button>
         </main>
       </body>

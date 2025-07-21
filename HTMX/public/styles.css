@@ -44,7 +44,6 @@ main button {
   color: #14b214;
   border-radius: 3px;
   background-color: transparent;
-  font-size: 1.2rem;
   text-transform: uppercase;
   outline: none;
   transition: background-color 0.5s ease-in;
@@ -68,4 +67,23 @@ main form {
   align-items: flex-end;
 }
 
+main p:has(input) {
+  flex: 1;
+}
 
+main label {
+  color: #14b214;
+}
+
+main input {
+  display: block;
+  font: inherit;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #14b214;
+  border-radius: 3px;
+  padding: 0.5rem;
+  color: #14b214;
+  outline: none;
+  cursor: pointer;
+}
