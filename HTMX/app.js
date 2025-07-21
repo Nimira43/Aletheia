@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
           <h1 class="logo">Aletheia - HTMX Mini Project</h1>
         </header>
         <main>
-          <p>HTMX lets HTML handle AJAX, WebSockets, and more—no JavaScript frameworks, just markup magic.</p>
+          <p>HTMX lets HTML handle AJAX, WebSockets, and more — no JavaScript frameworks, just markup magic.</p>
           <button>Discover More</button>
         </main>
       </body>
