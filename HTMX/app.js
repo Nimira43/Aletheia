@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
       <body>
         <header id="main-header">
           <img src="/hero.png" alt="hero">
-          <h1>Aletheia - HTMX Mini Project</h1>
+          <h1 class="logo">Aletheia - HTMX Mini Project</h1>
         </header>
         <main>
           <p>HTMX lets HTML handle AJAX, WebSockets, and more—no JavaScript frameworks, just markup magic.</p>

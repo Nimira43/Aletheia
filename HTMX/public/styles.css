@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=VT323&display=swap');
+
+* {
+  font-family: 'VT323', monospace;
+}
+
+.logo {
+  font-family: 'Bitcount', system-ui;
+  font-weight: 300;
+}
+
