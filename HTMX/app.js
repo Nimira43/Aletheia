@@ -24,12 +24,14 @@ app.get('/', (req, res) => {
         </header>
         <main>
           <p>HTMX lets HTML handle AJAX, WebSockets, and more — no JavaScript frameworks, just markup magic.</p>
-          <button>Discover More</button>
+          <button hx-get="/info">Discover More</button>
         </main>
       </body>
     </html> 
   `)
 })
+
+app.get('/info')
 
 app.listen(3000)
 console.log(famousSayings)
