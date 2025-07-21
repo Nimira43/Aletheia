@@ -2,10 +2,25 @@
 
 * {
   font-family: 'VT323', monospace;
+  box-sizing: border-box;
 }
 
 .logo {
   font-family: 'Bitcount', system-ui;
   font-weight: 300;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+  color: rgb(20, 178, 20);
+  min-height: 100vh;
+}
+
+main,
+#main-header {
+  width: 90%;
+  max-width: 50rem;
+  margin: 3rem auto;
 }
 
