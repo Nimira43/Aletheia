@@ -6,7 +6,28 @@ const app = express()
 app.use(express.static('public'))
 
 app.get('/', (re, res) => {
-  res.send('Hello HTMX World!')
+  res.send(`
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/favicon.png">
+        <link rel="stylesheet" href="/styles.css">
+        <title>Aletheia - HTMX Mini Project</title>
+      </head>
+      <body>
+        <header id="main-header">
+          <img src="/hero.png" alt="hero">
+          <h1>Aletheia - HTMX Mini Project</h1>
+        </header>
+        <main>
+          <p>HTMX lets HTML handle AJAX, WebSockets, and more—no JavaScript frameworks, just markup magic.</p>
+          <button>Discover More</button>
+        </main>
+      </body>
+    </html> 
+  `)
 })
 
 app.listen(3000)
