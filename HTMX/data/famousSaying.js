@@ -1,4 +1,4 @@
-const famousSayings = [
+export const famousSayings = [
   'Break a leg',
   'Better late than never',
   'A picture\’s worth a thousand words',
