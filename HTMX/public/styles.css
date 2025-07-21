@@ -55,3 +55,17 @@ main button:hover {
   background-color: #14b214;
   color: #000;
 }
+
+main li {
+  margin: 1rem 0;
+}
+
+main form {
+  width: 90%;
+  max-width: 20rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+
