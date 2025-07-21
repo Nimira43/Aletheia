@@ -5,7 +5,7 @@ const app = express()
 
 app.use(express.static('public'))
 
-app.get('/', (re, res) => {
+app.get('/', (req, res) => {
   res.send(`
     <!DOCTYPE html>
     <html lang="en">
@@ -31,3 +31,4 @@ app.get('/', (re, res) => {
 })
 
 app.listen(3000)
+console.log(famousSayings)
