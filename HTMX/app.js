@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="/TheFavicon.png">
-        <script src="/htmx.js"></script>
+        <script src="/htmx.js" defer></script>
         <link rel="stylesheet" href="/styles.css">
         <title>Aletheia - HTMX Mini Project</title>
       </head>
