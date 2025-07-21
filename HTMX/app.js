@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
       <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="/favicon.png">
+        <link rel="icon" href="/TheFavicon.png">
         <link rel="stylesheet" href="/styles.css">
         <title>Aletheia - HTMX Mini Project</title>
       </head>
@@ -23,7 +23,6 @@ app.get('/', (req, res) => {
         </header>
         <main>
           <p>HTMX lets HTML handle AJAX, WebSockets, and more — no JavaScript frameworks, just markup magic.</p>
-          <input type="text" />
           <button>Discover More</button>
         </main>
       </body>
