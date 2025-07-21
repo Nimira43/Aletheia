@@ -5,15 +5,10 @@
   box-sizing: border-box;
 }
 
-.logo {
-  font-family: 'Bitcount', system-ui;
-  font-weight: 300;
-}
-
 body {
   margin: 0;
   background-color: #000;
-  color: rgb(20, 178, 20);
+  color: #14b214;
   min-height: 100vh;
 }
 
@@ -24,3 +19,21 @@ main,
   margin: 3rem auto;
 }
 
+#main-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#main-header img {
+  background-color: #14b214;
+  padding: 0.5rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.logo {
+  margin: auto 0;
+  font-family: 'Bitcount', system-ui;
+  font-weight: 300;
+}
