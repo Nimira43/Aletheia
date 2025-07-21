@@ -31,7 +31,13 @@ app.get('/', (req, res) => {
   `)
 })
 
-app.get('/info')
+app.get('/info', (req, res) => {
+  res.send(`
+    <ul>
+      ${famousSayings.map(info => `<li>${info}</li>`)}
+    </ul>  
+  `)
+})
 
 app.listen(3000)
 console.log(famousSayings)
