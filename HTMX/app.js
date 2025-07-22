@@ -25,8 +25,9 @@ app.get('/', (req, res) => {
         <main>
           <p>HTMX lets HTML handle AJAX, WebSockets, and more — no JavaScript frameworks, just markup magic.</p>
           <button 
-            hx-get="/info" 
-            hx-swap="outerHTML"
+            hx-get="/info"
+            hx-target="main" 
+            hx-swap="beforeend"
           >
             Discover More
           </button>
