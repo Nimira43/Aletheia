@@ -42,6 +42,7 @@ main button {
   padding: 0.5rem 1rem;
   border: 1px solid #14b214;
   color: #14b214;
+  font-size: 1rem;
   border-radius: 3px;
   background-color: transparent;
   text-transform: uppercase;
@@ -74,6 +75,7 @@ main p:has(input) {
 
 main label {
   color: #14b214;
+  text-transform: uppercase;
 }
 
 main input {
@@ -83,6 +85,7 @@ main input {
   background: transparent;
   border: 1px solid #14b214;
   border-radius: 3px;
+  margin-top: 0.5rem;
   padding: 0.5rem;
   color: #14b214;
   outline: none;
