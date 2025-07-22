@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
 app.get('/info', (req, res) => {
   res.send(`
     <ul>
-      ${famousSayings.map(info => `<li>${info}</li>`)}
+      ${famousSayings.map(info => `<li>${info}</li>`).join('')}
     </ul>  
   `)
 })
