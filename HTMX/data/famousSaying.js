@@ -1,5 +1,4 @@
 export const famousSayings = [
-  'Break a leg',
   'Better late than never',
   'A picture\’s worth a thousand words',
   'Don\’t count your chickens before they hatch',
@@ -7,19 +6,15 @@ export const famousSayings = [
   'It takes two to tango',
   'What goes around comes around',
   'Practice makes perfect',
-  'Let sleeping dogs lie',
   'Hit the nail on the head',
   'The early bird catches the worm',
   'Actions speak louder than words',
   'Don\’t bite the hand that feeds you',
   'You can\’t judge a book by its cover',
   'Time flies when you\’re having fun',
-  'Birds of a feather flock together',
   'Every cloud has a silver lining',
   'Don\’t put all your eggs in one basket',
   'Too many cooks spoil the broth',
-  'Where there\’s smoke, there\’s fire',
-  'A watched pot never boils',
   'Money doesn\’t grow on trees',
   'Rome wasn\’t built in a day'
 ]
