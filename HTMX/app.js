@@ -24,27 +24,22 @@ app.get('/', (req, res) => {
         </header>
         <main>
           <p>HTMX lets HTML handle AJAX, WebSockets, and more — no JavaScript frameworks, just markup magic.</p>
-          <button 
-            hx-get="/info"
-            hx-trigger="mouseenter[ctrlKey], click"
-            hx-target="main" 
-            hx-swap="beforeend"
-          >
-            Discover More
-          </button>
+          <form>
+            <p>
+              <label for="note">New Note:</label>
+              <input type="text" id="note" name="note" />
+            </p>
+            <p>
+              <button>Save Note</button>
+            </p>
+          </form>
+          <ul>
+            ${famousSayings.map((info) => `<li>${info}</li>`).join('')}
+          </ul>
         </main>
       </body>
     </html> 
   `)
 })
 
-app.get('/info', (req, res) => {
-  res.send(`
-    <ul>
-      ${famousSayings.map(info => `<li>${info}</li>`).join('')}
-    </ul>  
-  `)
-})
-
 app.listen(3000)
-console.log(famousSayings)
