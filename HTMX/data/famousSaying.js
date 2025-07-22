@@ -4,8 +4,6 @@ export const famousSayings = [
   'A picture\’s worth a thousand words',
   'Don\’t count your chickens before they hatch',
   'All\’s fair in love and war',
-  'Curiosity killed the cat',
-  'When pigs fly',
   'It takes two to tango',
   'What goes around comes around',
   'Practice makes perfect',
