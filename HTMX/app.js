@@ -26,6 +26,7 @@ app.get('/', (req, res) => {
           <p>HTMX lets HTML handle AJAX, WebSockets, and more — no JavaScript frameworks, just markup magic.</p>
           <button 
             hx-get="/info"
+            hx-trigger="mouseenter[ctrlKey]"
             hx-target="main" 
             hx-swap="beforeend"
           >
