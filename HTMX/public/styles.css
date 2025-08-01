@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main: #14b214;
+  --dark: #000;
+}
+
 body {
   margin: 0;
   background-color: #000;
