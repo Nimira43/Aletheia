@@ -3,6 +3,7 @@ import { famousSayings } from './data/famousSaying.js'
 
 const app = express()
 
+app.use(express.urlencoded({extended: false}))
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
