@@ -28,6 +28,7 @@ app.get('/', (req, res) => {
           <form 
             hx-post="/note"
             hx-target="ul"  
+            hx-swap="outerHTML"
           >
             <p>
               <label for="note">New Note:</label>
