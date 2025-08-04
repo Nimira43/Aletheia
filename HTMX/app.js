@@ -44,7 +44,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/note', (req, res) => {
-  
+  const enteredNote = req.body.note
 })
 
 app.listen(3000)
