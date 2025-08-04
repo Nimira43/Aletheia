@@ -25,7 +25,10 @@ app.get('/', (req, res) => {
         </header>
         <main>
           <p>HTMX lets HTML handle AJAX, WebSockets, and more — no JavaScript frameworks, just markup magic.</p>
-          <form hx-post="/note">
+          <form 
+            hx-post="/note"
+            hx-target="ul"  
+          >
             <p>
               <label for="note">New Note:</label>
               <input type="text" id="note" name="note" />
