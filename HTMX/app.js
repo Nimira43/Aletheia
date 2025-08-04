@@ -42,4 +42,8 @@ app.get('/', (req, res) => {
   `)
 })
 
+app.post('/note', (req, res) => {
+  
+})
+
 app.listen(3000)
