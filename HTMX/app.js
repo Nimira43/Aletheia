@@ -45,6 +45,7 @@ app.get('/', (req, res) => {
 
 app.post('/note', (req, res) => {
   const enteredNote = req.body.note
+  famousSayings.unshift(enteredNote)
 })
 
 app.listen(3000)
