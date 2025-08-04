@@ -12,8 +12,8 @@
 
 body {
   margin: 0;
-  background-color: #000;
-  color: #14b214;
+  background-color: var(--dark);
+  color: var(--main);
   min-height: 100vh;
 }
 
@@ -31,7 +31,7 @@ main,
 }
 
 #main-header img {
-  background-color: #14b214;
+  background-color: var(--main);
   padding: 0.5rem;
   height: 4rem;
   border-radius: 50%;
@@ -45,8 +45,8 @@ main,
 
 main button {
   padding: 0.5rem 1rem;
-  border: 1px solid #14b214;
-  color: #14b214;
+  border: 1px solid var(--main);
+  color: var(--main);
   font-size: 1rem;
   border-radius: 3px;
   background-color: transparent;
@@ -57,8 +57,8 @@ main button {
 }
 
 main button:hover {
-  background-color: #14b214;
-  color: #000;
+  background-color: var(--main);
+  color: var(--dark);
 }
 
 main li {
@@ -79,7 +79,7 @@ main p:has(input) {
 }
 
 main label {
-  color: #14b214;
+  color: var(--main);
   text-transform: uppercase;
 }
 
@@ -88,11 +88,11 @@ main input {
   font: inherit;
   width: 100%;
   background: transparent;
-  border: 1px solid #14b214;
+  border: 1px solid var(--main);
   border-radius: 3px;
   margin-top: 0.5rem;
   padding: 0.5rem;
-  color: #14b214;
+  color: var(--main);
   outline: none;
   cursor: pointer;
 }
