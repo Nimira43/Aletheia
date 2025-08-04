@@ -46,6 +46,12 @@ app.get('/', (req, res) => {
 app.post('/note', (req, res) => {
   const enteredNote = req.body.note
   famousSayings.unshift(enteredNote)
+
+  res.send(`
+    <ul>
+      ${famousSayings.map((info) => `<li>${info}</li>`).join('')}
+    </ul>
+  `)
 })
 
 app.listen(3000)
