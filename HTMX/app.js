@@ -51,11 +51,18 @@ app.post('/note', (req, res) => {
   const enteredNote = req.body.note
   famousSayings.unshift(enteredNote)
 
-  res.send(`
-    <ul>
-      ${famousSayings.map((info) => `<li>${info}</li>`).join('')}
-    </ul>
-  `)
+  // Send and Handle POST requests
+
+  // Method 1 
+  // res.send(`
+  //   <ul>
+  //     ${famousSayings.map((info) => `<li>${info}</li>`).join('')}
+  //   </ul>
+  // `)
+
+  // Method 2
+  res.redirect()
+
 })
 
 app.listen(3000)
