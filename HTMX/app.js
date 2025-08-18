@@ -32,6 +32,7 @@ app.get('/', (req, res) => {
 
             // Method 2
             hx-select="ul"         
+          
           >
             <p>
               <label for="note">New Note:</label>
