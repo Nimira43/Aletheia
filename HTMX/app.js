@@ -29,6 +29,9 @@ app.get('/', (req, res) => {
             hx-post="/note"
             hx-target="ul"  
             hx-swap="outerHTML"
+
+            // Method 2
+            hx-select="ul"         
           >
             <p>
               <label for="note">New Note:</label>
@@ -61,8 +64,7 @@ app.post('/note', (req, res) => {
   // `)
 
   // Method 2
-  res.redirect()
-
+  res.redirect('/')
 })
 
 app.listen(3000)
