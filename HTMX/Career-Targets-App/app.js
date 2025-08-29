@@ -49,7 +49,8 @@ app.get('/', (req, res) => {
                 <span>${target}</span>
                 <button
                   hx-delete="/targets/${index}"
-                  hx-target=""
+                  hx-target="#target-${index}"
+                  hx-swap="outerHTML"
                 >
                   Delete
                 </button>
@@ -67,10 +68,15 @@ app.get('/', (req, res) => {
 app.post('/targets', (req, res) => {
   const targetText = req.body.target
   careerTargets.push(targetText)
+  const index = careerTargets.length - 1
   res.send(`
-    <li id="target-${careerTargets.length - 1}">
+    <li id="target-${index}">
       <span>${targetText}</span>
-      <button>
+        <button
+          hx-delete="/targets/${index}"
+          hx-target="#target-${index}"
+          hx-swap="outerHTML"
+        >
         Delete
       </button>
     </li>
