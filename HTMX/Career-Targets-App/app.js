@@ -76,6 +76,8 @@ app.post('/targets', (req, res) => {
 
 app.delete('/targets/:idx', (req,res) => {
   const index = req.params.idx
+  careerTargets.splice(index, 1)
+  
 })
 
 app.listen(3000)
