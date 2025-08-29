@@ -53,3 +53,22 @@ form input {
   width: 20rem;
   border-radius: 3px;
 }
+
+form button {
+  font: inherit;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border: 1px solid #999;
+  background-color: transparent;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+form button:hover {
+  background-color: #999;
+  color: #111;
+}
+
