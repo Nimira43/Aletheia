@@ -4,7 +4,7 @@ const careerTargets = []
 const app = express()
 
 app.use(express.urlencoded({
-  extended: flase
+  extended: false
 }))
 app.use(express.static('public'))
 
@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" href="/images/TheFavicon.png">
       <link rel="stylesheet" href="/styles.css">
-      <title>Aletheia | Career Goals</title>
+      <title>Aletheia | Career Targets</title>
       <script src="/htmx.js" defer></script>
     </head>
     <body>
@@ -46,3 +46,15 @@ app.get('/', (req, res) => {
   `)
 })
 
+app.post('/targets', (req, res) => {
+  const targetText = req.body.target
+  careerTargets.push(targetText)
+  res.send(`
+    <li id="target-${careerTargets.length - 1}">
+      <span>${targetText}</span>
+      <button>Delete</button>
+    </li>
+  `)
+})
+
+app.listen(3000)
