@@ -65,7 +65,11 @@ app.post('/targets', (req, res) => {
   res.send(`
     <li id="target-${careerTargets.length - 1}">
       <span>${targetText}</span>
-      <button>Delete</button>
+      <button
+        hx-delete
+      >
+        Delete
+      </button>
     </li>
   `)
 })
