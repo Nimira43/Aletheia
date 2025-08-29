@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
               <input 
                 type="text" 
                 id="target" 
-                name="trget"
+                name="target"
               >
             </div>
             <button type="submit">Add Target</button>

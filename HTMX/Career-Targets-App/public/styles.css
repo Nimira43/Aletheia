@@ -52,7 +52,7 @@ form input {
 
 form input,
 form button,
-#goals li button {
+#targets li button {
   font: inherit;
   border: 1px solid #999;
   background-color: transparent;
@@ -60,7 +60,7 @@ form button,
 }
 
 form button,
-#goals li button {
+#targets li button {
   font-weight: 400;
   text-transform: uppercase;
   padding: 0.5rem 1rem;
