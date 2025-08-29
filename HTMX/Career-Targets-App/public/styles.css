@@ -46,43 +46,50 @@ form label {
 }
 
 form input {
+  width: 20rem;
+  padding: 0.5rem 0.25rem;
+}
+
+form input,
+form button,
+#goals li button {
   font: inherit;
   border: 1px solid #999;
   background-color: transparent;
-  padding: 0.5rem 0.25rem;
-  width: 20rem;
   border-radius: 3px;
 }
 
-form button {
-  font: inherit;
-  font-weight: 300;
+form button,
+#goals li button {
+  font-weight: 400;
   text-transform: uppercase;
   padding: 0.5rem 1rem;
-  border: 1px solid #999;
-  background-color: transparent;
-  border-radius: 3px;
   outline: none;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
 
-form button:hover {
+form button:hover,
+#targets li button:hover {
   background-color: #999;
   color: #111;
 }
 
-#goals {
+#targets {
   margin: 2rem 0;
 }
 
-#goals li {
+#targets li {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 0;
   background-color: #999;
   border-radius: 3px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#targets li span {
+  font-weight: 400;
 }

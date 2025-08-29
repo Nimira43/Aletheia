@@ -11,7 +11,7 @@
 // </head>
 // <body>
 //   <main>
-//     <h1>Career Goals</h1>
+//     <h1>Career Targets</h1>
 //     <section>
 //       <form>
 //         <div>
@@ -22,8 +22,8 @@
 //       </form>
 //     </section>
 //     <section>
-//       <ul id="goals">
-//         <li id="goal">
+//       <ul id="targets">
+//         <li id="target">
 //           <span>Target</span>
 //           <button>Remove</button>
 //         </li>
