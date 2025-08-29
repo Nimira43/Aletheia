@@ -17,19 +17,28 @@ app.get('/', (req, res) => {
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" href="/images/TheFavicon.png">
       <link rel="stylesheet" href="/styles.css">
-      <title>Aletheia | Career Targets</title>
       <script src="/htmx.js" defer></script>
+      <title>Aletheia | Career Targets</title>
     </head>
     <body>
       <main>
         <h1>Career Targets</h1>
         <section>
-          <form>
+          <form
+            id="target-form"
+            hx-post="/targets"
+            hx-target="#targets"
+            hx-swap="beforeend"
+          >
             <div>
-              <label>Target</label>
-              <input type="text">
+              <label htmlFor="goal">Target</label>
+              <input 
+                type="text" 
+                id="target" 
+                name="trget"
+              >
             </div>
-            <button>Add Target</button>
+            <button type="submit">Add Target</button>
           </form>
         </section>
         <section>
@@ -42,10 +51,6 @@ app.get('/', (req, res) => {
               </li>
             `
           ).join('')}
-            <li id="target">
-              <span>Target</span>
-              <button>Remove</button>
-            </li>
           </ul>
         </section>
       </main>
