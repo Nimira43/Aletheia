@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=VT323&display=swap');
+
+* {
+  font-family: 'VT323', monospace;
+  box-sizing: border-box;
+}
+
+:root {
+  --main: #14b214;
+  --dark: #000;
+}
+
+body {
+  margin: 0;
+  background-color: var(--dark);
+  color: var(--main);
+  min-height: 100vh;
+}
+
+main,
+#main-header {
+  width: 90%;
+  max-width: 50rem;
+  margin: 3rem auto;
+}
+
+#main-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#main-header img {
+  background-color: var(--main);
+  padding: 0.5rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.logo {
+  margin: auto 0;
+  font-family: 'Bitcount', system-ui;
+  font-weight: 300;
+}
+
+main button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--main);
+  color: var(--main);
+  font-size: 1rem;
+  border-radius: 3px;
+  background-color: transparent;
+  text-transform: uppercase;
+  outline: none;
+  transition: background-color 0.5s ease-in;
+  cursor: pointer;
+}
+
+main button:hover {
+  background-color: var(--main);
+  color: var(--dark);
+}
+
+main li {
+  margin: 1rem 0;
+  list-style: none;
+}
+
+main form {
+  width: 90%;
+  max-width: 20rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+main p:has(input) {
+  flex: 1;
+}
+
+main label {
+  color: var(--main);
+  text-transform: uppercase;
+}
+
+main input {
+  display: block;
+  font: inherit;
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--main);
+  border-radius: 3px;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  color: var(--main);
+  outline: none;
+  cursor: pointer;
+}

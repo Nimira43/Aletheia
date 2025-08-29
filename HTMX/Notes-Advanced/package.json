@@ -1,0 +1,15 @@
+{
+  "name": "htmx",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch app.js"
+  },
+  "author": "Nick Rabone",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}

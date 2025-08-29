@@ -1,0 +1,20 @@
+export const famousSayings = [
+  'Better late than never',
+  'A picture\’s worth a thousand words',
+  'Don\’t count your chickens before they hatch',
+  'All\’s fair in love and war',
+  'It takes two to tango',
+  'What goes around comes around',
+  'Practice makes perfect',
+  'Hit the nail on the head',
+  'The early bird catches the worm',
+  'Actions speak louder than words',
+  'Don\’t bite the hand that feeds you',
+  'You can\’t judge a book by its cover',
+  'Time flies when you\’re having fun',
+  'Every cloud has a silver lining',
+  'Don\’t put all your eggs in one basket',
+  'Too many cooks spoil the broth',
+  'Money doesn\’t grow on trees',
+  'Rome wasn\’t built in a day'
+]
