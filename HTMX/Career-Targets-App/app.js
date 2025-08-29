@@ -34,6 +34,14 @@ app.get('/', (req, res) => {
         </section>
         <section>
           <ul id="targets">
+          ${careerTargets.map(
+            (target, index) => `
+              <li id="target-${index}">
+                <span>${target}</span>
+                <button>Delete</button>
+              </li>
+            `
+          ).join('')}
             <li id="target">
               <span>Target</span>
               <button>Remove</button>
