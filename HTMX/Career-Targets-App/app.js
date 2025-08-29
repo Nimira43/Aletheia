@@ -74,4 +74,8 @@ app.post('/targets', (req, res) => {
   `)
 })
 
+app.delete('/targets/:idx', (req,res) => {
+  const index = req.params.idx
+})
+
 app.listen(3000)
