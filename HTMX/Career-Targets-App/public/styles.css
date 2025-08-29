@@ -44,3 +44,12 @@ form label {
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
 }
+
+form input {
+  font: inherit;
+  border: 1px solid #999;
+  background-color: transparent;
+  padding: 0.5rem 0.25rem;
+  width: 20rem;
+  border-radius: 3px;
+}
