@@ -66,7 +66,7 @@ app.post('/targets', (req, res) => {
     <li id="target-${careerTargets.length - 1}">
       <span>${targetText}</span>
       <button
-        hx-delete
+        hx-delete="/targets/${index}"
       >
         Delete
       </button>
