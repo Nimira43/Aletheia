@@ -47,7 +47,12 @@ app.get('/', (req, res) => {
             (target, index) => `
               <li id="target-${index}">
                 <span>${target}</span>
-                <button>Delete</button>
+                <button
+                  hx-delete="/targets/${index}"
+                  hx-target=""
+                >
+                  Delete
+                </button>
               </li>
             `
           ).join('')}
@@ -65,19 +70,17 @@ app.post('/targets', (req, res) => {
   res.send(`
     <li id="target-${careerTargets.length - 1}">
       <span>${targetText}</span>
-      <button
-        hx-delete="/targets/${index}"
-      >
+      <button>
         Delete
       </button>
     </li>
   `)
 })
 
-app.delete('/targets/:idx', (req,res) => {
+app.delete('/targets/:idx', (req, res) => {
   const index = req.params.idx
   careerTargets.splice(index, 1)
-  
+  res.send()
 })
 
 app.listen(3000)
