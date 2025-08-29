@@ -1,3 +1,19 @@
+import express from 'express'
+
+const careerTargets = []
+const app = express()
+
+app.use(express.urlencoded({
+  extended: flase
+}))
+app.use(express.static('public'))
+
+app.get('/', (req, res) => {
+  res.send(`
+    
+  
+  `)
+})
 
 // <!DOCTYPE html>
 // <html lang="en">
