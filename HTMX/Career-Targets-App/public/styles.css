@@ -41,6 +41,7 @@ form label {
   display: block;
   font-weight: 400;
   font-size: 0.9rem;
+  text-transform: uppercase;
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
 }
@@ -54,8 +55,8 @@ form input,
 form button,
 #targets li button {
   font: inherit;
-  border: 1px solid #999;
-  background-color: transparent;
+  border: 1px solid #555;
+  background-color: linen;
   border-radius: 3px;
 }
 
