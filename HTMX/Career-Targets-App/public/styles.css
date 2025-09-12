@@ -26,9 +26,7 @@ main {
   margin: 3rem auto;
   padding: 2rem;
   border-radius: 3px;
-  background-color: #dcdcdc;
   min-height: 85vh;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 form {
