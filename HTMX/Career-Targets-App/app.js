@@ -44,12 +44,12 @@ app.get('/', (req, res) => {
         <section>
           <ul id="targets">
           ${careerTargets.map(
-            (target, index) => `
-              <li id="target-${index}" class="target-box">
-                <span>${target}</span>
+            (target) => `
+              <li id="target-${target.id}" class="target-box">
+                <span>${target.text}</span>
                 <button
-                  hx-delete="/targets/${index}"
-                  hx-target="#target-${index}"
+                  hx-delete="/targets/${target.id}"
+                  hx-target="#target-${target.id}"
                   hx-swap="outerHTML"
                 >
                   Delete
