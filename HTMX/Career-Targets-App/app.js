@@ -67,17 +67,17 @@ app.get('/', (req, res) => {
 
 app.post('/targets', (req, res) => {
   const targetText = req.body.target
+  const id =  new Date().getTime()
   careerTargets.push({
     text: targetText,
-    id: new Date().getTime()
+    id: id
   })
-  const index = careerTargets.length - 1
   res.send(`
-    <li id="target-${index}">
+    <li id="target-${id}">
       <span>${targetText}</span>
         <button
-          hx-delete="/targets/${index}"
-          hx-target="#target-${index}"
+          hx-delete="/targets/${id}"
+          hx-target="#target-${id}"
           hx-swap="outerHTML"
         >
         Delete
