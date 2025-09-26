@@ -67,7 +67,10 @@ app.get('/', (req, res) => {
 
 app.post('/targets', (req, res) => {
   const targetText = req.body.target
-  careerTargets.push(targetText)
+  careerTargets.push({
+    text: targetText,
+    id: new Date().getTime()
+  })
   const index = careerTargets.length - 1
   res.send(`
     <li id="target-${index}">
