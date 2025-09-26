@@ -67,7 +67,7 @@ app.get('/', (req, res) => {
 
 app.post('/targets', (req, res) => {
   const targetText = req.body.target
-  const id =  new Date().getTime()
+  const id =  new Date().getTime().toString()
   careerTargets.push({
     text: targetText,
     id: id
@@ -86,8 +86,9 @@ app.post('/targets', (req, res) => {
   `)
 })
 
-app.delete('/targets/:idx', (req, res) => {
-  const index = req.params.idx
+app.delete('/targets/:id', (req, res) => {
+  const id = req.params.id
+  const index = careerTargets.findIndex(goal => goal.id === id)
   careerTargets.splice(index, 1)
   res.send()
 })
