@@ -61,19 +61,10 @@ app.get('/', (req, res) => {
             id="targets"
             hx-swap="outerHTML"
           >
-            ${careerTargets.map(
-              (target) => `
-                <li id="target-${target.id}" class="target-box">
-                  <span>${target.text}</span>
-                  <button
-                    hx-delete="/targets/${target.id}"
-                    hx-target="#target-${target.id}"                
-                  >
-                    Delete
-                  </button>
-                </li>
-              `
-            ).join('')}
+            ${careerTargets
+              .map((target) => renderTargetListItem(target.id, target.text))
+              .join('')
+            }
           </ul>
         </section>
       </main>
@@ -89,17 +80,7 @@ app.post('/targets', (req, res) => {
     text: targetText,
     id: id
   })
-  res.send(`
-    <li id="target-${id}">
-      <span>${targetText}</span>
-        <button
-          hx-delete="/targets/${id}"
-          hx-target="#target-${id}"          
-        >
-        Delete
-      </button>
-    </li>
-  `)
+  res.send(renderTargetListItem(id, targetText))
 })
 
 app.delete('/targets/:id', (req, res) => {
