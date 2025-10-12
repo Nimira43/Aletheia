@@ -5,13 +5,13 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   list-style: none;
-  text-decoration: none;;
+  text-decoration: none;
 }
 
 body {
   margin: 0;
-  background-color: #faf0e6;
-  color: #333;
+  background-color: #fff;
+  color: #111;
   min-height: 100vh;
 }
 
@@ -53,8 +53,8 @@ form input,
 form button,
 #targets li button {
   font: inherit;
-  border: 1px solid #555;
-  background-color: linen;
+  border: 1px solid #333;
+  background-color: transparent;
   border-radius: 3px;
 }
 
@@ -70,7 +70,7 @@ form button,
 
 form button:hover,
 #targets li button:hover {
-  background-color: #999;
+  background-color: transparent;
   color: #111;
 }
 
@@ -84,7 +84,7 @@ form button:hover,
   align-items: center;
   padding: 0.5rem 1rem;
   margin: 0.5rem 0;
-  background-color: #999;
+  background-color: transparent;
   border-radius: 3px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
