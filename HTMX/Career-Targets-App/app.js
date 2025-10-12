@@ -1,6 +1,9 @@
 import express from 'express'
 
 const careerTargets = []
+
+function renderTargetListItem() {}
+
 const app = express()
 
 app.use(express.urlencoded({
