@@ -50,7 +50,7 @@ app.get('/', (req, res) => {
                 <button
                   hx-delete="/targets/${target.id}"
                   hx-target="#target-${target.id}"
-                  hx-swap="outerHTML"
+                  
                 >
                   Delete
                 </button>
@@ -78,7 +78,7 @@ app.post('/targets', (req, res) => {
         <button
           hx-delete="/targets/${id}"
           hx-target="#target-${id}"
-          hx-swap="outerHTML"
+          
         >
         Delete
       </button>
