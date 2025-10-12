@@ -42,21 +42,23 @@ app.get('/', (req, res) => {
           </form>
         </section>
         <section>
-          <ul id="targets">
-          ${careerTargets.map(
-            (target) => `
-              <li id="target-${target.id}" class="target-box">
-                <span>${target.text}</span>
-                <button
-                  hx-delete="/targets/${target.id}"
-                  hx-target="#target-${target.id}"
-                  
-                >
-                  Delete
-                </button>
-              </li>
-            `
-          ).join('')}
+          <ul 
+            id="targets"
+            hx-swap="outerHTML"
+          >
+            ${careerTargets.map(
+              (target) => `
+                <li id="target-${target.id}" class="target-box">
+                  <span>${target.text}</span>
+                  <button
+                    hx-delete="/targets/${target.id}"
+                    hx-target="#target-${target.id}"                
+                  >
+                    Delete
+                  </button>
+                </li>
+              `
+            ).join('')}
           </ul>
         </section>
       </main>
@@ -77,8 +79,7 @@ app.post('/targets', (req, res) => {
       <span>${targetText}</span>
         <button
           hx-delete="/targets/${id}"
-          hx-target="#target-${id}"
-          
+          hx-target="#target-${id}"          
         >
         Delete
       </button>
