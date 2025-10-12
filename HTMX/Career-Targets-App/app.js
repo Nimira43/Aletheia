@@ -4,11 +4,11 @@ const careerTargets = []
 
 function renderTargetListItem(id, text) {
   return (`
-    <li id="target-${target.id}" class="target-box">
-      <span>${target.text}</span>
+    <li id="target-${id}" class="target-box">
+      <span>${text}</span>
       <button
-        hx-delete="/targets/${target.id}"
-        hx-target="#target-${target.id}"                
+        hx-delete="/targets/${id}"
+        hx-target="#target-${id}"                
       >
         Delete
       </button>
