@@ -4,7 +4,7 @@ const careerTargets = []
 
 function renderTargetListItem(id, text) {
   return (`
-    <li class="target-box">
+    <li>
       <span>${text}</span>
       <button
         hx-delete="/targets/${id}"
