@@ -45,10 +45,10 @@ app.get('/', (req, res) => {
             hx-post="/targets"
             hx-target="#targets"
             hx-swap="beforeend"
-            hx-on:submit="document.querySelector('form').reset()"
+            hx-on:after-request="document.querySelector('form').reset()"
           >
             <div>
-              <label htmlFor="goal">Target</label>
+              <label htmlFor="target">Target</label>
               <input 
                 type="text" 
                 id="target" 
@@ -76,6 +76,8 @@ app.get('/', (req, res) => {
 })
 
 app.post('/targets', (req, res) => {
+  console.log('Incoming POST:', req.body) 
+ 
   const targetText = req.body.target
   const id =  new Date().getTime().toString()
   careerTargets.push({
