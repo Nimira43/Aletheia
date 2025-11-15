@@ -84,7 +84,9 @@ app.post('/targets', (req, res) => {
     text: targetText,
     id: id
   })
-  res.send(renderTargetListItem(id, targetText))
+  setTimeout(() => {
+    res.send(renderTargetListItem(id, targetText))
+  }, 1000)
 })
 
 app.delete('/targets/:id', (req, res) => {
