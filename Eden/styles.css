@@ -208,3 +208,8 @@ header p {
   border: 1px solid var(--main);
 }
 
+.centre {
+  text-align: center;
+}
+
+
