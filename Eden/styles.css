@@ -9,8 +9,9 @@
 :root {
   --light: #fffdfa;
   --dark: #111;
-  --main: #ff4500;
-  --support: #ffd700;
+  --black: #000;
+  --main: #ffd700;
+  --support: #ff4500;
   --grey-1: #333;
   --grey-2: #999;
   --grey-3: #ccc;
@@ -45,8 +46,8 @@ header img {
   font-family: 'Sixtyfour', sans-serif;
   margin: 0;
   font-size: 3rem;
-  letter-spacing: 1rem;
-  color: var(--support);
+  letter-spacing: 0.2rem;
+  color: var(--main);
 }
 
 header p {
@@ -54,3 +55,11 @@ header p {
   font-size: 1.15rem;
 }
 
+.locations-category {
+  max-width: 85rem;
+  background-color: var(--black);
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 2px solid var(--main);
+  border-radius: 3px;
+}
