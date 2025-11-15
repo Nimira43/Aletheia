@@ -26,3 +26,12 @@ app.post('/places', (req, res) => {
   `)
 })
 
+app.delete('/places/:id', (req, res) => {
+  const locationId = req.params.id
+  const locationIndex = INTERESTING_LOCATIONS.findIndex((loc) => loc.id === locationId)
+  INTERESTING_LOCATIONS.splice(locationIndex, 1)
+
+  res.send()
+})
+
+app.listen(3000)
