@@ -98,10 +98,20 @@ header p {
 .location-item button {
   background: transparent;
   border: 1px solid var(--main);
+  border-radius: 3px;
   color: var(--main);
   padding: 1rem;
   transition: var(--transition);
 }
 
-.location-item:nth-child(odd) button:hover {}
-.location-item:nth-child(even) button:hover {}
+.location-item:nth-child(odd) button:hover {
+  box-shadow: 0 0 8px 4px rgba(255, 68, 0, 0.6);
+  border-radius: 8px;
+  transform: rotate(5deg);
+}
+
+.location-item:nth-child(even) button:hover {
+  box-shadow: 0 0 8px 4px rgba(255, 68, 0, 0.6);
+  border-radius: 8px;
+  transform: rotate(5deg);
+}
