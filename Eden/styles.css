@@ -63,3 +63,12 @@ header p {
   border: 2px solid var(--main);
   border-radius: 3px;
 }
+
+.locations-category h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  color: var(--main);
+  text-align: center;
+}
