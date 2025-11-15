@@ -153,3 +153,11 @@ header p {
   max-width: 38ch;
   /* color: var(--light); */
 }
+
+#confirmation-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
