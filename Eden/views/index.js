@@ -1,0 +1,43 @@
+export default function renderLocationsPage(availableLocations, interestingLocations) {
+  return (`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="./public/TheFavicon.png">
+      <link rel="stylesheet" href="./styles.css">
+      <title>Placeholder</title>
+    </head>
+    <body>
+      <header>
+        <img src="./public/logo.png" alt="Logo">
+        <h1 class="logo">Eden</h1>
+        <p>A galley of places you have been or wish to go to</p>
+      </header>
+      <main>
+        <section class="locations-category">
+          <h2>Your Locations</h2>
+          <ul id="interesting-locations" class="locations">
+            <li>Brazil</li>
+            <li>Australia</li>
+            <li>Greece</li>
+            <li>Belize</li>
+            <li>Hawaii</li>
+          </ul>
+        </section>
+        <section class="locations-category">
+          <h2>Available Locations</h2>
+          <ul id="interesting-locations" class="locations">
+            <li>Spain</li>
+            <li>Egypt</li>
+            <li>New Zealand</li>
+            <li>Italy</li>
+            <li>Argentina</li>
+          </ul>
+        </section>
+      </main>
+    </body>
+    </html>   
+  `)
+}
