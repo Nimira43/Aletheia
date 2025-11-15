@@ -6,7 +6,8 @@ export default function renderLocationsPage(availableLocations, interestingLocat
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" href="./public/TheFavicon.png">
-      <link rel="stylesheet" href="./styles.css">
+      <link rel="stylesheet" href="/public/styles.css">
+      <script src="/public/htmx.js" defer></script>
       <title>Placeholder</title>
     </head>
     <body>
