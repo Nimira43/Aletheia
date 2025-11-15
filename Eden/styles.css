@@ -95,3 +95,13 @@ header p {
   background: var(--grey-1);
 }
 
+.location-item button {
+  background: transparent;
+  border: 1px solid var(--main);
+  color: var(--main);
+  padding: 1rem;
+  transition: var(--transition);
+}
+
+.location-item:nth-child(odd) button:hover {}
+.location-item:nth-child(even) button:hover {}
