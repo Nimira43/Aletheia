@@ -1,4 +1,4 @@
-export const availableLocations = [
+export const AVAILABLE_LOCATIONS = [
   {
     id: 'p1',
     title: 'Grand Canyon',
