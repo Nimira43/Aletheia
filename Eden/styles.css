@@ -177,6 +177,10 @@ header p {
   color: var(--dark);
 }
 
+.modal button#action-no {
+  opacity: 0.8;
+}
+
 .modal {
   min-width: 30rem;
   padding: 0;
