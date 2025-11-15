@@ -212,8 +212,18 @@ header p {
   text-align: center;
 }
 
-.suggested-locations-section h2 {
+#suggested-locations-section h2 {
   margin: 2rem;
   text-align: center;
   color: var(--main);
+}
+
+#suggested-locations {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#suggested-locations li {
+  max-width: 20rem;
 }
