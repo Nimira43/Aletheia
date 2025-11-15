@@ -181,6 +181,14 @@ header p {
   opacity: 0.8;
 }
 
+.button-text {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 1rem;
+  color: blue; /* temp */
+}
+
 .modal {
   min-width: 30rem;
   padding: 0;
