@@ -7,14 +7,14 @@ export default function renderLocationsPage(availableLocations, interestingLocat
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" href="./public/TheFavicon.png">
-      <link rel="stylesheet" href="/public/styles.css">
-      <script src="/public/htmx.js" defer></script>
+      <link rel="icon" href="/TheFavicon.png">
+      <link rel="stylesheet" href="/styles.css">
+      <script src="/htmx.js" defer></script>
       <title>Placeholder</title>
     </head>
     <body>
       <header>
-        <img src="./public/logo.png" alt="Logo">
+        <img src="/logo.png" alt="Logo">
         <h1 class="logo">Eden</h1>
         <p>A galley of places you have been or wish to go to</p>
       </header>
