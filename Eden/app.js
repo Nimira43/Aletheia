@@ -1,5 +1,5 @@
 import express from 'express'
-import { AVAILABLE_LOCATIONS } from './data/availableLocations'
+import { AVAILABLE_LOCATIONS } from './data/availableLocations.js'
 import renderLocationsPage from './views/index.js'
 import renderLocation from './views/components/location.js'
 
@@ -21,9 +21,7 @@ app.post('/places', (req, res) => {
   const location = AVAILABLE_LOCATIONS.find((loc) => loc.id === locationId)
   INTERESTING_LOCATIONS.push(location)
 
-  res.send(`
-  
-  `)
+  res.send(`placeholder`)
 })
 
 app.delete('/places/:id', (req, res) => {

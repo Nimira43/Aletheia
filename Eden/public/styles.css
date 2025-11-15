@@ -152,7 +152,7 @@ header p {
   font-size: 1.15rem;
   margin: 0;
   max-width: 38ch;
-  /* color: var(--light); */
+  color: var(--light);
 }
 
 #confirmation-actions {

@@ -16,7 +16,7 @@ export default function renderLocationsPage(availableLocations, interestingLocat
       <header>
         <img src="/logo.png" alt="Logo">
         <h1 class="logo">Eden</h1>
-        <p>A galley of places you have been or wish to go to</p>
+        <p>A galley of places you have been or wish to go...</p>
       </header>
       <main>
         <section class="locations-category">
