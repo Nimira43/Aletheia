@@ -1,4 +1,4 @@
-import renderLocation from "./components/location"
+import renderLocation from './components/location.js'
 
 export default function renderLocationsPage(availableLocations, interestingLocations) {
   return (`
