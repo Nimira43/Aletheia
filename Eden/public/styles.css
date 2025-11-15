@@ -92,7 +92,7 @@ header p {
   display: flex;
   flex-direction: column;
   border-radius: 3px;
-  background: var(--grey-1);
+  background: var(--dark);
   animation: slide-up-fade-in 0.3s ease-out forwards;
 }
 
@@ -126,6 +126,8 @@ header p {
 
 .location-item h3 {
   font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
   position: absolute;
   bottom: 0;
   right: 1rem;
