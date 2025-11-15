@@ -15,3 +15,14 @@ app.get('/', (req, res) => {
   )
   res.send(renderLocationsPage(availableLocations, INTERESTING_LOCATIONS))
 })
+
+app.post('/places', (req, res) => {
+  const locationId = req.body.locationId
+  const location = AVAILABLE_LOCATIONS.find((loc) => loc.id === locationId)
+  INTERESTING_LOCATIONS.push(location)
+
+  res.send(`
+  
+  `)
+})
+
