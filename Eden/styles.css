@@ -169,6 +169,12 @@ header p {
   border-radius: 3px;
   background-color: transparent;
   color: var(--main);
+  transition: var(--transition);
+}
+
+.modal button:hover {
+  background-color: var(--main);
+  color: var(--dark);
 }
 
 .modal {
