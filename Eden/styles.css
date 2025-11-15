@@ -123,4 +123,15 @@ header p {
   border-radius: 8px;
 }
 
-
+.location-item h3 {
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  margin: 1rem auto;
+  background-color: var(--main);
+  color: var(--dark);
+  border-radius: 3px;
+  padding: 0.15rem 0.35rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
