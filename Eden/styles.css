@@ -20,5 +20,13 @@
 
 html {
   line-height: 1.5;
-  color: 
+  color: var(--light);
+  height: 100%;
 }
+
+body {
+  margin: 0;
+  padding: 2rem;
+  background: var(--dark);
+}
+
