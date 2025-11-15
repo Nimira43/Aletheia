@@ -3,4 +3,22 @@
 * {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
+  box-sizing: border-box;
+}
+ 
+:root {
+  --light: #fffdfa;
+  --dark: #111;
+  --main: #ff4500;
+  --support: #ffd700;
+  --grey-1: #333;
+  --grey-2: #999;
+  --grey-3: #ccc;
+  --grey-4: #eee;
+  --transition: 0.5s ease-in-out; 
+}
+
+html {
+  line-height: 1.5;
+  color: 
 }
