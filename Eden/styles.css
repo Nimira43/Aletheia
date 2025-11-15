@@ -86,3 +86,11 @@ header p {
   padding: 0;
   list-style: none;
 }
+
+.location-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  background: var(--grey-1);
+}
