@@ -1,3 +1,5 @@
+import renderLocation from "./components/location"
+
 export default function renderLocationsPage(availableLocations, interestingLocations) {
   return (`
     <!DOCTYPE html>
@@ -20,21 +22,13 @@ export default function renderLocationsPage(availableLocations, interestingLocat
         <section class="locations-category">
           <h2>Your Locations</h2>
           <ul id="interesting-locations" class="locations">
-            <li>Brazil</li>
-            <li>Australia</li>
-            <li>Greece</li>
-            <li>Belize</li>
-            <li>Hawaii</li>
+            ${interestingLocations.map((location) => renderLocation(location, false)).join('')}
           </ul>
         </section>
         <section class="locations-category">
           <h2>Available Locations</h2>
           <ul id="interesting-locations" class="locations">
-            <li>Spain</li>
-            <li>Egypt</li>
-            <li>New Zealand</li>
-            <li>Italy</li>
-            <li>Argentina</li>
+            ${availableLocations.map((location) => renderLocation(location)).join('')}
           </ul>
         </section>
       </main>
