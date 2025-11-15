@@ -206,6 +206,7 @@ header p {
   background-color: var(--dark);
   border-radius: 3px;
   border: 1px solid var(--main);
+  animation: slide-down-fade-in 0.3s ease-out forwards;
 }
 
 .centre {
