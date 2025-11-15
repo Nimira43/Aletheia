@@ -212,4 +212,8 @@ header p {
   text-align: center;
 }
 
-
+.suggested-locations-section h2 {
+  margin: 2rem;
+  text-align: center;
+  color: var(--main);
+}
