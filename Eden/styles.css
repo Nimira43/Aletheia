@@ -171,3 +171,11 @@ header p {
   color: var(--main);
 }
 
+.modal {
+  min-width: 30rem;
+  padding: 0;
+  z-index: 2;
+  background-color: var(--dark);
+  border-radius: 3px;
+  border: 1px solid var(--main);
+}
