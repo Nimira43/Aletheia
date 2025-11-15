@@ -46,6 +46,7 @@ app.get('/', (req, res) => {
             hx-target="#targets"
             hx-swap="beforeend"
             hx-on::after-request="this.reset()"
+            hx-disabled-elt="form button"
           >
             <div>
               <label htmlFor="target">Target</label>
