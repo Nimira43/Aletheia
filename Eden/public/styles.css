@@ -35,11 +35,35 @@ header {
   text-align: center;
 }
 
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 6px rgba(255, 69, 0, 0.6));
+  }
+
+  50% {
+    filter: drop-shadow(0 0 18px rgba(255, 69, 0, 1));
+  }
+
+  100% {
+    filter: drop-shadow(0 0 6px rgba(255, 69, 0, 0.6));
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(-10deg);
+  }
+
+  to {
+    transform: rotate(10deg);
+  }
+}
+
 header img {
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   object-fit: contain;
-  filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.8));
+  animation: glow 2s ease-in-out infinite, spin 4s ease-in-out infinite alternate;
 }
 
 .logo {

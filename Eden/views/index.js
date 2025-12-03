@@ -10,7 +10,7 @@ export default function renderLocationsPage(availableLocations, interestingLocat
       <link rel="icon" href="/TheFavicon.png">
       <link rel="stylesheet" href="/styles.css">
       <script src="/htmx.js" defer></script>
-      <title>Placeholder</title>
+      <title>Eden</title>
     </head>
     <body>
       <header>
